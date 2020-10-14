@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registrar Ruta</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="fonts/style.css"></script>
+        <script type="text/javascript" src="js/componentes.js"></script>
+        <script type="text/javascript" src="js/autobus.js"></script>
+</head>
+<body>
+	<div id="menu"></div>
+	<div class="container bg-white border">
+		<div class="row justify-content-center mt-10 pt-5">
+			<div class="col-md-10">
+				<h1 class="display-6">Asignar Paradas</h1>
+				<hr class="bg-info">
+				<section class="mensaje"></section>
+				<form method="#" action="#">
+
+					<div class="row form-group">
+					
+						<div class="col">
+							<div class="row">
+								<label for="fecha" class="col form-label col-md-4">Numero Placa</label>
+							</div>
+							<div class="row-md-8" id="p">
+							</div>
+						</div>
+					</div>
+					<div class="row form-group">
+						<div class="col">
+							<div class="row">
+								<label for="calle" class="col form-label col-md-4">Numero calle</label>
+							</div>
+							<div class="row-md-8" id="nc">
+								
+							</div>
+						</div>
+						<div class="col">
+							<div class="row">
+								<label for="Zona" class="col form-label col-md-4">Zona</label>
+							</div>
+							<div class="row-md-8" id="z">
+								
+							</div>
+						</div>
+					</div>
+					<div class="row form-group">
+					
+						<div class="col">
+							<div class="row">
+								<label for="fecha" class="col form-label col-md-4">Hora llegada (Utilizar formato 24 hrs)</label>
+							</div>
+							<div class="row-md-8">
+								<input type="time" name="" id="llegada" class="form-control" placeholder="Ej: 08:00">
+							</div>
+						</div>
+					</div>
+					<input type="button" name="" value="Registrar" class="btn btn-primary" onclick="registrar_parada()">
+					<input type="reset" name="" class="btn btn-secondary">
+				</form>
+			</div>
+			
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<div class="container">
+		<section class="borrado"></section>
+	</div>
+	<div class="container">
+		<div id="tabla"></div>
+		
+	</div>
+
+</body>
+</html>

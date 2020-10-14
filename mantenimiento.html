@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mantenimiento</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="fonts/style.css"></script>
+        <script type="text/javascript" src="js/componentes.js"></script>
+        <script type="text/javascript" src="js/autobus.js"></script>
+</head>
+<body>
+	<div id="menu"></div>
+	<div class="container bg-white border">
+		<div class="row justify-content-center mt-10 pt-5">
+			<div class="col-md-10">
+				<h1 class="display-4">Registro de Incidencias</h1>
+				<hr class="bg-info">
+				<section class="mensaje"></section>
+				<form method="#" action="#">
+					<div class="row form-group">
+						<div class="col">
+							<div class="row">
+								<label for="placa" class="col form-label col-md-4">Numero de Placa</label>
+							</div>
+							<div class="row-md-8" id="p">
+								
+							</div>
+						</div>
+						
+					</div>
+					<div class="row form-group">
+						<div class="col">
+							<div class="row">
+								<label for="incidencia" class="col form-label col-md-4">Incidencia</label>
+							</div>
+							<div class="row-md-8" id="i">
+									
+							</div>
+						</div>
+					
+						<div class="col">
+							<div class="row">
+								<label for="fecha" class="col form-label col-md-4">Coste</label>
+							</div>
+							<div class="row-md-8">
+								<input type="text" name="" class="form-control" id="coste">
+							</div>
+						</div>
+					</div>
+					<div class="row form-group">
+						<div class="col">
+							<div class="row">
+								<label for="fecha" class="col form-label col-md-4">Descripcion</label>
+							</div>
+							<div class="row-md-8">
+								<textarea class="form-control" id="descripcion" maxlength="200" rezisable="false" style="resize: none;"></textarea>
+							</div>
+						</div>
+					</div>
+					<input type="button" name="" value="Registrar" class="btn btn-primary" onclick="registrar_incidencia()">
+					<input type="reset" name="" class="btn btn-secondary">
+				</form>
+			</div>
+			
+		</div>
+	</div>
+
+</body>
+</html>
